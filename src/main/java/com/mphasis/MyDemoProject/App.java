@@ -13,6 +13,9 @@ public class App
 			System.out.println("Welcome");
 		}
 	}
+	public void method2() {
+		System.out.println("New method added by developer2");
+	}
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
