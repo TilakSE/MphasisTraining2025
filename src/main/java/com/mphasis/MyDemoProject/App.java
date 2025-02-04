@@ -16,6 +16,9 @@ public class App
 	public void method2() {
 		System.out.println("New method added by developer2");
 	}
+	public void method3() {
+		System.out.println("This method is added by developer3");
+	}
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
