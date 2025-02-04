@@ -27,29 +27,17 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.mphasis.GitDemo2"/>
-			<item value="com.mphasis.BankAccount1"/>
-			<item value="com.mphasis.InheritanceSports"/>
-			<item value="com.mphasis.ShapeInterface"/>
-			<item value="com.mphasis.Interface1"/>
-			<item value="com.mphasis.Static1"/>
-			<item value="com.mphasis.EmployeeFirst"/>
-			<item value="com.mphasis.FirstEmployee"/>
-			<item value="com.mphasis.MyDemoProject"/>
+			<item value="com.mphasis.MultipleInheritance"/>
+			<item value="com.mphasis.Strings"/>
+			<item value="com.mphasis.ArrayDemo"/>
 		</list>
 		<list key="groupId">
 			<item value="com.mphasis"/>
 		</list>
 		<list key="artifactId">
-			<item value="GitDemo2"/>
-			<item value="BankAccount1"/>
-			<item value="InheritanceSports"/>
-			<item value="ShapeInterface"/>
-			<item value="Interface1"/>
-			<item value="Static1"/>
-			<item value="EmployeeFirst"/>
-			<item value="FirstEmployee"/>
-			<item value="MyDemoProject"/>
+			<item value="MultipleInheritance"/>
+			<item value="Strings"/>
+			<item value="ArrayDemo"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

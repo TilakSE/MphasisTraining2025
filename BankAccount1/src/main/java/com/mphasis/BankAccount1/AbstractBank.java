@@ -1,0 +1,64 @@
+package com.mphasis.BankAccount1;
+
+public class AbstractBank 
+{
+	public abstract class Bank{
+		public abstract void deposit(double amount);
+		public abstract String withdraw(double amount);
+	}
+	public class SavingsAccount extends Bank{
+		double balance;
+		public SavingsAccount(double balance) {
+			this.balance=balance;
+		}
+		public void deposit(double amount) {
+			
+		}
+		public String withdraw(double amount) {
+			if (balance<500) {
+				balance=balance-amount-amount*0.1;
+			}
+			else {
+				balance=balance-amount;
+			}
+			return "Balance in Savings account is "+balance;
+		}
+	}
+	public class CurrentAccount extends Bank{
+		double balance;
+		public CurrentAccount(double balance) {
+			this.balance=balance;
+		}
+		public void deposit(double amount) {
+			
+		}
+		public String withdraw(double amount) {
+			if (balance<1000) {
+				balance=balance-amount-amount*0.1;
+			}
+			else {
+				balance=balance-amount;
+			}
+			return "Balance in Current account is "+balance;
+		}
+	}
+    public static void main( String[] args )
+    {
+    	AbstractBank app=new AbstractBank();
+        Bank currentAccount=app.new CurrentAccount(2000);
+        Bank savingsAccount=app.new SavingsAccount(2000);
+        System.out.println(currentAccount.withdraw(1000));
+        System.out.println(savingsAccount.withdraw(1000));
+        System.out.println(currentAccount.withdraw(500));
+        System.out.println(savingsAccount.withdraw(500));
+        System.out.println(currentAccount.withdraw(100));
+        System.out.println(savingsAccount.withdraw(100));
+    }
+}
+
+
+
+/*
+ * bank base class, 2 methods=> withdraw and deposit 2 child classes => current
+ * and savings different withdraw for these 2 accounts
+ */
